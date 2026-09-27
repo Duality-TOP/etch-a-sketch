@@ -10,11 +10,18 @@ confirmBtn.addEventListener("click", () => {
 
     const size = validatedInput;
     for (let i = 0; i < size * size; i++) {
+        // cell configs
         const div = document.createElement("div");
         div.classList.add("cell");
 
         div.style.width = `${100 / size}%`;
         div.style.height = `${100 / size}%`;
+        
+        // hover effect
+        div.addEventListener("mouseover", () => {
+            div.style.backgroundColor = "black";
+        })
+
         containerDiv.appendChild(div);
     }
-})
+});
