@@ -20,7 +20,7 @@ confirmBtn.addEventListener("click", () => {
         // hover effect
         div.addEventListener("mouseover", () => {
             div.style.backgroundColor = "black";
-        })
+        });
 
         containerDiv.appendChild(div);
     }
