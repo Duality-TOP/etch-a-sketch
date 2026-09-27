@@ -5,7 +5,7 @@ const confirmBtn = document.querySelector("#confirm-btn");
 confirmBtn.addEventListener("click", () => {
     const validatedInput = Number(input.value.trim());
 
-    if (!Number.isInteger(validatedInput) || validatedInput > 100) return;
+    if (!Number.isInteger(validatedInput) || validatedInput <= 0 || validatedInput > 100) return;
     containerDiv.innerHTML = "";
 
     const size = validatedInput;
