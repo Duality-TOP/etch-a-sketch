@@ -13,7 +13,8 @@ confirmBtn.addEventListener("click", () => {
         const div = document.createElement("div");
         div.classList.add("cell");
 
-        div.style.width = `${size} / ${100}`;
+        div.style.width = `${100} / ${size}%`;
+        div.style.height = `${100} / ${size}%`;
         containerDiv.appendChild(div);
     }
 })
